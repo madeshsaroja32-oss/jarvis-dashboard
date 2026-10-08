@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>JARVIS Dashboard — Demo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="hud">
+
+    <header>
+      <h1>JARVIS v1.0</h1>
+      <span class="gear">⚙</span>
+    </header>
+
+    <div class="stats">
+      <div class="stat">
+        <h3>CPU</h3>
+        <div class="value" id="cpu-val">23%</div>
+        <div class="bar"><div class="fill" id="cpu-bar" style="width: 23%"></div></div>
+      </div>
+      <div class="stat">
+        <h3>SYSTEM</h3>
+        <p>RAM <span id="ram-val">52%</span></p>
+        <div class="bar small"><div class="fill" id="ram-bar" style="width: 52%"></div></div>
+        <p>DISK <span id="disk-val">26%</span></p>
+        <div class="bar small"><div class="fill" id="disk-bar" style="width: 26%"></div></div>
+      </div>
+    </div>
+
+    <div class="waveform">
+      <canvas id="wave"></canvas>
+    </div>
+
+    <div class="status">
+      <div class="mic" id="mic">🎙️</div>
+      <h2 id="state">JARVIS ONLINE</h2>
+      <p id="hint">SAY "JARVIS" TO ACTIVATE</p>
+    </div>
+
+    <div class="console" id="console">🎤 Demo mode — no backend connected</div>
+
+    <footer>
+      <button class="btn" disabled>🌐 Chrome</button>
+      <button class="btn" disabled>📁 Files</button>
+      <button class="btn" disabled>⚙ System</button>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
